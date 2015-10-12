@@ -28,6 +28,7 @@
             />
 
         <CheckBox
+            android:id="@+id/taskCheck"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -62,6 +63,7 @@
                />
 
            <TextView
+               android:id="@+id/taskDateView"
                android:layout_marginLeft="10dp"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
@@ -86,6 +88,7 @@
                />
 
            <TextView
+               android:id="@+id/taskTimeView"
                android:layout_marginLeft="10dp"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"

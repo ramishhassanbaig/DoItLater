@@ -3,8 +3,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.ramish.doitnow.Fragments.CompletedTaskFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="Completed Task" />
+    <ListView
+        android:id="@+id/completedTaskListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        />
 
 </FrameLayout>

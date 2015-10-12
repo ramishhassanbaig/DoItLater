@@ -39,7 +39,7 @@
 
             <Button
 
-                android:id="@+id/todoTaskButton"
+                android:id="@+id/addTodoTaskButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="add"
@@ -59,6 +59,7 @@
 
 
     <EditText
+        android:id="@+id/task_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -76,6 +77,7 @@
         android:gravity="left">
 
         <EditText
+            android:id="@+id/task_date"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:hint="Select Date"
@@ -85,6 +87,7 @@
             android:layout_marginRight="25dp"/>
 
         <EditText
+            android:id="@+id/task_time"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:hint="Select Time"
@@ -105,6 +108,7 @@
         android:layout_marginRight="20dp">
 
         <EditText
+            android:id="@+id/task_summary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter summary or description"
