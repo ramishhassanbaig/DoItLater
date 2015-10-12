@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/tabsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tabs_layout_background"
+        android:weightSum="3"
+        >
+
+        <RelativeLayout
+            android:id="@+id/todoTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/todoTaskButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todo"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:textColor="#ffe9e9e9"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="0dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/CompletedTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/completedTaskButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:textColor="#ffe9e9e9"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/AllTaskTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/allTaskButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Tasks"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:textColor="#ffe9e9e9"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="15dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_below="@+id/tabsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabsLayout">
+
+        <ImageView
+            android:src="@drawable/plus_sign"
+            android:id="@+id/addTaskButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:padding="15dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/add_task_layout"/>
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
